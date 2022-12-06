@@ -1,1 +1,1 @@
-# luckhunger-github.io
+# luckhunger.github.io
