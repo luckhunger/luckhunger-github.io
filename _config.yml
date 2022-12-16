@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: 코딩행운아
 description:
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: # the subpath of your site, e.g. /blog
 url: "https://luckhunger.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
@@ -157,6 +157,8 @@ kramdown:
     block:
       line_numbers: false
 
+asset_url: /assets
+
 compress_html:
   clippings: all
   comments: all
@@ -166,3 +168,4 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
+
