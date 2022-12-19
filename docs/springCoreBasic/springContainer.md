@@ -1,8 +1,9 @@
 ---
 layout: default
 title: 스프링 컨테이너
-parent: 스프링
-nav_order: 2
+grand_parent: 스프링
+parent: 스프링 컨테이너와 빈
+nav_order: 1
 ---
 
 ## 목차
