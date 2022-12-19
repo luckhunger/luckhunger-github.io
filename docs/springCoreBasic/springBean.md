@@ -68,6 +68,8 @@ class ApplicationContextInfoTest {
 }
 ```
 
+---
+
 ## **빈 조회해보기**
 > + 가장 기본적인 조회 방법이다.
 > + `ac.getBean(빈 이름, 타입);` 형태로 조회한다.
@@ -125,6 +127,8 @@ public class ApplicationContextBasicFindTest {
     }
 }
 ```
+
+---
 
 ## **중복되는 빈 조회**
 > + 타입만으로 조회할 때에 같은 타입이 둘 이상 있으면 중복 오류(NoUniqueDefinitionException)가 발생한다.
@@ -196,6 +200,8 @@ public class ApplicationContextSameBeanFindTest {
     }
 }
 ```
+
+---
 
 ## **빈의 상속**
 > + 부모 타입으로 조회하면 자식 타입도 함께 조회한다.
