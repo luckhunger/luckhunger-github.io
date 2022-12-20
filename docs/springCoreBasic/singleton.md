@@ -385,10 +385,14 @@ public class ConfigurationSingletonTest {
         // 그 이유는 스프링이 CGLIB라는 조작 라이브러리 사용 > AppConfig 클래스를 상속받은 임의의 다른 클래스 생성 > 그 클래스를 스프링 빈으로 등록
         System.out.println("bean = " + bean.getClass());
     }
-
 }
 
 ```
+
+---
+
+## **📌 핵심**
+> 스프링 설정 정보는 항상 `@Configuration` 을 사용하자
 
 
 
