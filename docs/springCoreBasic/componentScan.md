@@ -68,9 +68,9 @@ public class AutoAppConfig {
 
 ## **탐색할 패키지의 시작 위치 지정**
 > + 필요한 위치부터 탐색하도록 시작 위치를 지정해서 시간을 단축시킬 수 있다.
-> + basePackages : 탐색할 패키지의 시작 위치를 지정한다. 해당 패키지를 포함한 모든 하위 패키지를 탐색한다.
+> + **basePackages** : 탐색할 패키지의 시작 위치를 지정한다. 해당 패키지를 포함한 모든 하위 패키지를 탐색한다.
 >   + ex) basePackages = "hello.core.member" 와 같은 방식으로 시작 위치를 지정할 수 있다.
-> + basePackageClasses : 지정한 클래스의 패키지를 탐색 위치로 지정한다.
+> + **basePackageClasses** : 지정한 클래스의 패키지를 탐색 위치로 지정한다.
 >   + ex) basePackageClasses = AutoAppConfig.class
 > + ❗ 만약 지정하지 않으면 @ComponentScan 이 붙은 설정 정보 클래스의 패키지가 시작 위치가 된다.
 
@@ -108,8 +108,8 @@ public class AutoAppConfig {
 ---
 
 ## **필터**
-> + **<font color='#0101DF'>includeFilters</font>** : 컴포넌트 스캔 대상을 추가로 지정한다.
-> + **<font color='#0101DF'>excludeFilters</font>** : 컴포넌트 스캔에서 제외할 대상을 지정한다.
+> + **includeFilters** : 컴포넌트 스캔 대상을 추가로 지정한다.
+> + **excludeFilters** : 컴포넌트 스캔에서 제외할 대상을 지정한다.
 > + 사실 `@Component 면 충분`하기 때문에 includeFilters를 사용할 일은 거의 없다.
 > + `excludeFilters`는 간혹 사용하지만 이 또한 많이 쓰지는 않는다.
 
@@ -139,6 +139,11 @@ public class AutoAppConfig {
 
 ### **수동 빈 등록 VS 자동 빈 등록**
 > + 수동으로 등록한 빈이 우선권을 가진다.
-> + 수동으로 등록한 빈이 자동으로 등록한 빈을 오버라이딩한다.
+> + ❗ 수동으로 등록한 빈이 자동으로 등록한 빈을 오버라이딩한다.
 > + 그러나 의도하지 않아서 잡기 어려운 버그가 만들어지기 때문에 최근에 스프링 부트에서는 오류가 발생하도록 기본값을 바꾸었다.
-> + 스프링 부트인 CoreApplication 을 실행하면 해당 오류를 볼 수 있다.
+> + 스프링 부트인 `CoreApplication` 을 실행하면 해당 오류를 볼 수 있다.
+
+---
+
+## **📌 핵심**
+> + 애매한 상황일 때에는 차라리 코드를 더 쓰더라도 명확하게 만들어주는 것이 좋다.
