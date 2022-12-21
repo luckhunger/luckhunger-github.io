@@ -84,7 +84,7 @@ public class AutoAppConfig {
 >   3. com.hello.repository
 > + com.hello 에 AppConfig 같은 메인 설정 정보를 두고 @ComponentScan 어노테이션을 붙이고 basePackages 지정은 생략한다.
 > + 이렇게 하면 com.hello 를 포함한 하위는 모두 컴포넌트 스캔의 대상이 된다.
-> + ❗ 참고로 스프링 부트를 사용하면 스프링 부트의 대표 시작 정보인 @SpringBootApplication 을 이 프로젝트 시작 루트 위치에 두는 것이 관례이다.
+> + ❗ 참고로 스프링 부트를 사용하면 스프링 부트의 대표 시작 정보인 `@SpringBootApplication` 을 이 프로젝트 시작 루트 위치에 두는 것이 관례이다.
 
 ---
 
@@ -103,7 +103,7 @@ public class AutoAppConfig {
 >> + **<font color='#0101DF'>@Repository</font>** : 스프링 데이터 접근 계층으로 인식하고, 데이터 계층의 예외를 스프링 예외로 변환해준다.
 >>   + ex) DB 등이 바뀌면 그에 대한 예외도 전부 바뀌게 되는데, 이 탓에 다른 계층들까지 흔들리게 된다. 이를 방지해준다.
 >> + **<font color='#0101DF'>@Configuration</font>** : 스프링 설정 정보로 인식하고 스프링 빈이 싱글톤을 유지하도록 추가적인 처리를 해준다.
->> + `useDafaultFilters 옵션` : 기본적으로 켜져있으며 이 옵션을 끄면 기본 스캔 대상들이 제외된다.
+>> + `useDefaultFilters 옵션` : 기본적으로 켜져있으며 이 옵션을 끄면 기본 스캔 대상들이 제외된다.
 
 ---
 
