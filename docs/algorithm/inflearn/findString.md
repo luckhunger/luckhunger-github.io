@@ -29,11 +29,6 @@ nav_order: 1
 
 ___
 
-## **입출력 예제**
-> ![](../../assets/images/algorithmInflearn/findString.PNG)
-
----
-
 ## **풀이방식 설계**
 > 1. 입력받은 문자열을 하나씩 쪼갠다.
 > 2. 문자열과 쪼갠 문자들을 모두 영어 알파벳 대문자로 변형한다.
