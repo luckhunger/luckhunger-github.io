@@ -6,7 +6,7 @@ has_children: true
 permalink: /docs/algorithm
 ---
 
-## 기존 정리 블로그
+## 첫번째 알고리즘 정리 블로그
 [티스토리 블로그 (silverji)](https://silverji.tistory.com/)
 
 ## 인프런 알고리즘 강의
