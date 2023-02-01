@@ -2,7 +2,6 @@
 layout: default
 title: Java 언어
 parent: 자바
-has_children: true
 nav_order: 1
 ---
 ## 목차
