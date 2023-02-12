@@ -57,6 +57,60 @@ nav_order: 3
 |--|-----|-----|-----|
 |++|1씩 증가|int num1 = 5;<br>num1++;|변수 num1 선언 후 5 저장<br>num1에 1 증가(연산에 참여안함)|
 | | |int num1 = 5;<br>++num1;|변수 num1 선언 후 저장<br>num1에 1 증가 (연산에 참여안함)|
-| | |num -= 3;|num = num - 3;|
-| |long|8 byte|
-| |실수형 |float|4 byte|
+| | |int num1 = 5;<br>int num2 = ++num1;|변수 num1 선언 후 5 저장<br>num1에 1 증가 후 num2에 6 저장<br>(연산에 참여함)|
+| |int num1 = 5;<br>int num2 = num1++;|변수 num1 선언 후 5 저장<br>num1에 5 저장 후 num1에 1 증가<br>num1에 1 증가 (연산에 참여함)|
+| | |int num1 = 5;<br>System.out.print(num1++);|변수 num1 선언 후 5 저장<br>5 출력 후 num1에 1 증가<br>(매개변수로 전달)|
+| | |int num1 = 5;<br>System.out.print(++num1);|변수 num1 선언 후 5 저장<br>num1에 1 증가 후 6 출력<br>(매개변수로 전달)|
+|--|1씩 감소|int num1 = 5;<br>num1--;|변수 num1 선언 후 5 저장<br>num1에 1 감소 (연산에 참여안함)|
+| | |int num1 = 5;<br>++num1;|변수 num1 선언 후 저장<br>num1에 1 증가 (연산에 참여안함)|
+| | |int num1 = 5;<br>--num1;|변수 num1 선언 후 5 저장<br>num1에 1 감소 (연산에 참여안함)|
+| | |int num1 = 5;<br>int num2 = num1++;|변수 num1 선언 후 5 저장<br>num1에 5 저장 후 num1에 1 증가<br>num1에 1 증가 (연산에 참여함)|
+| | |int num1 = 5;<br>int num2 = --num1;|변수 num1 선언 후 5 저장<br>num1에 1 감소 후 num2에 4 저장<br>(연산에 참여함)|
+| | |int num1 = 5;<br>int num2 = num1--;|변수 num1 선언 후 5 저장<br>num1에 5 저장 후 num1에 1 증가<br>num1에 1 감소 (연산에 참여함)|
+| | |int num1 = 5;<br>System.out.print(num1--);|변수 num1 선언 후 5 저장<br>5 출력 후 num1에 1 감소<br>(매개변수로 전달)|
+| | |int num1 = 5;<br>System.out.print(--num1);|변수 num1 선언 후 5 저장<br>num1에 1 감소 후 4 출력<br>(매개변수로 전달)|
+
+---
+
+## **5. 비교 연산자**
+> 2개 데이터의 같음, 다름, 대소관계를 판단하여 true 또는 false를 리턴하는 연산자이다.
+> 주로 조건문이나 반복문에서 사용된다.
+>
+|비교연산자|의미|사용 예|결과|
+|--|-----|-----|-----|
+|==|좌우가 같으면 true 리턴, 아니면 false 리턴|int avg = 80;<br>boolean result = avg == 80;|result 에 true 저장|
+|!=|좌우가 같지 않으면 true 리턴, 아니면 false 리턴|int avg = 80;<br>boolean result = avg != 83;|result 에 true 저장|
+|>|왼쪽이 크면 true 리턴, 아니면 false 리턴|int avg = 80;<br>boolean result = avg > 100;|result 에 false 저장|
+|<|오른쪽이 크면 true 리턴, 아니면 false 리턴|int avg = 80;<br>boolean result = avg < 80;|result 에 false 저장|
+|>=|왼쪽이 크거나 같으면 같으면 true 리턴, 아니면 false 리턴|int avg = 80;<br>boolean result = avg >= 80|result 에 true 저장|
+|<=|오른쪽이 크거나 같으면 true 리턴, 아니면 false 리턴|int avg = 80;<br>boolean result = avg <= 80;|result 에 true 저장|
+
+---
+
+## **6. 논리 연산자**
+> true 또는 false 값을 가지고 논리적 연산을 하여 true 또는 false를 리턴하는 연산자이다.
+> 주로 조건문이나 반복문에서 사용된다.
+>
+|논리연산자|의미|사용 예|결과|
+|--|-----|-----|-----|
+|&&|좌우 모두 true 일 경우 true 리턴<br>그 외의 경우 false 리턴<br>false 리턴 시 이후 남아있는 연산은 안함|int kor = 85, eng = 70;<br>boolean result = kor >= 80 && eng >= 80 |result 에 false 저장|
+| | |int kor = 85, eng = 70;<br>boolean result = eng >= 80 && kor >= 80;|result 에 false 저장<br>kor >= 80 연산 안함|
+|&|좌우 모두 true 일 경우 true 리턴<br>그 외의 경우 false 리턴<br>무조건 모두 연산|int kor = 85, eng = 70;<br>boolean result = kor >= 80 & eng >= 80;|result 에 false 저장|
+| | |int kor = 85, eng = 70;<br>boolean result = eng >= 80 & kor >= 80;|result 에 false 저장|
+|\|\||좌우 중 하나 이상 true 일 경우 true 리턴<br>true 리턴 시 이후 남아있는 연산은 안함|int kor = 85, eng = 70;<br>boolean result = kor >= 80 || eng >= 80;|result 에 true 저장<br>eng>=80 연산 안함|
+| | |int avg = 80;<br>boolean result = avg <= 80;|result 에 true 저장|
+|\||좌우 중 하나 이상 true 일 경우 true 리턴<br>무조건 모두 연산|int kor = 85, eng = 70;<br>boolean result = kor >= 80 | eng >= 80;|result 에 true 저장|
+| | |int kor = 85, eng = 70;<br>boolean result = eng >= 80 | kor >= 80;|result 에 true 저장|
+|!|우측이 true 면 false 리턴, false 면 true 리턴
+|int kor = 85, eng = 70;<br>boolean result = !(kor < 80 || eng < 80);|result 에 true 저장|
+
+---
+
+## **7. 삼항 연산자**
+> 조건식 true 이면 설정 데이터를 리턴하는 연산자이다.
+>
+|삼항연산자 형식|의미|사용 예|
+|--|-----|--------|
+|변수명 = 조건식?데이터1:데이터2;|조건식이 true 일 경우 데이터 1 리턴<br>조건식이 false 일 경우 데이터 2 리턴|int avg = 80;<br>char result = (avg >= 80)?'합':'불';<br>result 에 합 저장|
+
+---
