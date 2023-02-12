@@ -97,11 +97,11 @@ nav_order: 3
 | | |int kor = 85, eng = 70;<br>boolean result = eng >= 80 && kor >= 80;|result 에 false 저장<br>kor >= 80 연산 안함|
 |&|좌우 모두 true 일 경우 true 리턴<br>그 외의 경우 false 리턴<br>무조건 모두 연산|int kor = 85, eng = 70;<br>boolean result = kor >= 80 & eng >= 80;|result 에 false 저장|
 | | |int kor = 85, eng = 70;<br>boolean result = eng >= 80 & kor >= 80;|result 에 false 저장|
-|\|\||좌우 중 하나 이상 true 일 경우 true 리턴<br>true 리턴 시 이후 남아있는 연산은 안함|int kor = 85, eng = 70;<br>boolean result = kor >= 80 || eng >= 80;|result 에 true 저장<br>eng>=80 연산 안함|
+|\|\||좌우 중 하나 이상 true 일 경우 true 리턴<br>true 리턴 시 이후 남아있는 연산은 안함|int kor = 85, eng = 70;<br>boolean result = kor >= 80 \|\| eng >= 80;|result 에 true 저장<br>eng>=80 연산 안함|
 | | |int avg = 80;<br>boolean result = avg <= 80;|result 에 true 저장|
-|\||좌우 중 하나 이상 true 일 경우 true 리턴<br>무조건 모두 연산|int kor = 85, eng = 70;<br>boolean result = kor >= 80 | eng >= 80;|result 에 true 저장|
-| | |int kor = 85, eng = 70;<br>boolean result = eng >= 80 | kor >= 80;|result 에 true 저장|
-|!|우측이 true 면 false 리턴, false 면 true 리턴|int kor = 85, eng = 70;<br>boolean result = !(kor < 80 || eng < 80);|result 에 true 저장|
+|\||좌우 중 하나 이상 true 일 경우 true 리턴<br>무조건 모두 연산|int kor = 85, eng = 70;<br>boolean result = kor >= 80 \| eng >= 80;|result 에 true 저장|
+| | |int kor = 85, eng = 70;<br>boolean result = eng >= 80 \| kor >= 80;|result 에 true 저장|
+|!|우측이 true 면 false 리턴, false 면 true 리턴|int kor = 85, eng = 70;<br>boolean result = !(kor < 80 \|\| eng < 80);|result 에 true 저장|
 
 ---
 
