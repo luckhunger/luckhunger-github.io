@@ -91,4 +91,4 @@ public class Main {
 ```
 
 ## **출처**
-[Stranger's LAB](ttps://st-lab.tistory.com/71)
+[Stranger's LAB](https://st-lab.tistory.com/71)
