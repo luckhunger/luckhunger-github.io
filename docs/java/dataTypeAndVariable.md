@@ -99,7 +99,7 @@ nav_order: 2
 > + 서로 다른 자료형의 데이터끼리 연산을 할 때 또는 변수에 데이터를 저장할 때 자료형을 통일하는 작업을 말한다.
 > + 자료형의 변환에는 암시적 형 변환과 명시적 형 변환이 있다.
 >
-## 암시적 형 변환(Implict Type Conversion)
+## **암시적 형 변환(Implict Type Conversion)**
 > + 어느 한 쪽 자료형이 다른 쪽 자료형으로 자동 변환되는 것을 말한다.
 > + 암시적 형 변환 시 자료형의 우선순위는 byte < char 또는 short < int < long < float < double 이다.
 >
@@ -112,7 +112,7 @@ nav_order: 2
 |double num1 = 5.0;<br>double num2 = 2.0;<br>double result = num1/num2;|변수 result에 `2.5` 저장<br>형변환 없음|
 |int num2 = "a";|변수 num2에 `97` 저장<br>"a"가 int형 변수에 저장되므로 아스키 코드값인 97로 반환|
 >
-## 명시적 형 변환(Explict Type Conversion)
+## **명시적 형 변환(Explict Type Conversion)**
 > + 코딩으로 cast 연산자를 명시함으로써 원하는 자료형으로 변환되는 것을 말한다.
 > + cast 연산자 바로 뒤의 변수 또는 데이터를 원하는 자료형으로 변환시킨다.
 > + 객체간의 형변환도 cast 연산자를 사용할 수 있다.
